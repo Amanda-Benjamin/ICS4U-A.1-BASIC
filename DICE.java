@@ -29,17 +29,17 @@ final class DICE {
 	*
 	* @param args No args will be used
 	*/
-        public static void main(final String[] args) {
+    public static void main(final String[] args) {
 
-	    // print out Game Introduction
-            System.out.println("THIS PROGRAM SIMLUATES THE ROLLING OF A");
-            System.out.println("PAIR OF DICE.");
-            System.out.println("YOU ENTER THE NUMBER OF TIMES YOU WANT THE COMPUTER");
-            System.out.println("TO 'ROLL' THE DICE. WATCH OUT, VERY LARGE NUMBERS TAKE");
-            System.out.println("A LONG TIME, IN PARTICULAR, NUMBERS OVER 5000");
+        // print out Game Introduction
+        System.out.println("THIS PROGRAM SIMLUATES THE ROLLING OF A");
+        System.out.println("PAIR OF DICE.");
+        System.out.println("YOU ENTER THE NUMBER OF TIMES YOU WANT THE COMPUTER");
+        System.out.println("TO 'ROLL' THE DICE. WATCH OUT, VERY LARGE NUMBERS TAKE");
+        System.out.println("A LONG TIME, IN PARTICULAR, NUMBERS OVER 5000");
 
-            
+        
 
-	    System.out.println("\nDone.");
-	}
+        System.out.println("\nDone.");
+    }
 }
