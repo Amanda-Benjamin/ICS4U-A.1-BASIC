@@ -66,7 +66,7 @@ Scanner scanner = new Scanner(System.in);
 				System.out.println("TOTAL SPOTS " + amountcounter + "        NUMBER OF TIMES " + frequency[amountcounter]);
 			}
 
-			System.out.print("TRY AGAIN? ");
+			System.out.print("\nTRY AGAIN? ");
 			useranswer = scanner.nextLine();
     	}
 		useranswer = scanner.nextLine();
