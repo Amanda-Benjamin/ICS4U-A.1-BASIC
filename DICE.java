@@ -52,7 +52,7 @@ final class DICE {
 		int[] frequency = new int[13];
 
 		if (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")); {
-		System.out.print("HOW MAY ROLLS: ");
+		System.out.print("HOW MANY ROLLS: ");
 		int rollamount = scanner.nextInt();
 
 			for (int counter = 0; counter < rollamount; counter++) {
@@ -63,12 +63,12 @@ final class DICE {
 			}
 
 			for (int amountcounter = 0; amountcounter <=12; amountcounter++) {
-				System.out.println("TOTAL SPOTS" + amountcounter + "NUMBER OF TIMES" + frequency[amountcounter]);
+				System.out.println("TOTAL SPOTS" + amountcounter + "        NUMBER OF TIMES" + frequency[amountcounter]);
 			}
 
 			System.out.print("TRY AGAIN? ");
 			useranswer = scanner.nextLine();
     	}
-		System.out.println("\nDone.");
+		useranswer = scanner.nextLine();
 	}
 }
