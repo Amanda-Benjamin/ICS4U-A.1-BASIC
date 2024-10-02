@@ -7,15 +7,11 @@
  * @since Oct 1 2024
  */
 
-	import java.util.Scanner;
-	import java.util.Random;
 
 /**
  * This is the BASIC DICE game
  */
 
-import java.util.Scanner;
-import java.util.Random;
 
 final class DICE {
 	/**
@@ -42,7 +38,7 @@ final class DICE {
 
     public static void main(final String[] args) {
 
-		Scanner scanner = new Scanner(System.in)
+		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
 
     	System.out.println("THIS PROGRAM SIMLUATES THE ROLLING OF A");
@@ -55,7 +51,7 @@ final class DICE {
 
 		int[] frequency = new int[13];
 
-		if (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")) {
+		if (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")); {
 		System.out.print("HOW MAY ROLLS: ");
 		int rollamount = scanner.nextInt();
 
