@@ -62,14 +62,13 @@ final class DICE {
 				frequency[total]++;
 			}
 
-			for (int amountcounter = 0; amountcounter <=12: amountcounter++) {
+			for (int amountcounter = 0; amountcounter <=12; amountcounter++;) {
 				System.out.println("TOTAL SPOTS" + amountcounter + "NUMBER OF TIMES" + frequency[amountcounter]);
 			}
 
 			System.out.print("TRY AGAIN? ");
 			useranswer = scanner.nextLine();
-    	} else {
-			System.out.println("\nDone.");
-		}
+    	}
+		System.out.println("\nDone.");
 	}
 }
