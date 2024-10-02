@@ -63,7 +63,7 @@ Scanner scanner = new Scanner(System.in);
 			}
 
 			for (int amountcounter = 0; amountcounter <=12; amountcounter++) {
-				System.out.println("TOTAL SPOTS" + amountcounter + "        NUMBER OF TIMES" + frequency[amountcounter]);
+				System.out.println("TOTAL SPOTS " + amountcounter + "        NUMBER OF TIMES " + frequency[amountcounter]);
 			}
 
 			System.out.print("TRY AGAIN? ");
