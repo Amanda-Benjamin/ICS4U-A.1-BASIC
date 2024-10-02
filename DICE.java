@@ -49,9 +49,8 @@ final class DICE {
 
 		String useranswer = "YES";
 
-		int[] frequency = new int[13];
-
 		while (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")); {
+		int[] frequency = new int[13];
 			if (true); {
 			System.out.print("HOW MANY ROLLS: ");
 			int rollamount = scanner.nextInt();
