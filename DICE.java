@@ -12,6 +12,8 @@
  * This is the BASIC DICE game
  */
 
+	import java.util.Scanner;
+	import java.util.Random;
 
 final class DICE {
 	/**
@@ -33,8 +35,6 @@ final class DICE {
 	* @param args No args will be used
 	*/
 
-	import java.util.Scanner;
-	import java.util.Random;
 
     public static void main(final String[] args) {
 
