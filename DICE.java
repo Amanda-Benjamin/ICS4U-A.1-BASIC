@@ -66,7 +66,6 @@ final class Dice {
 
 			System.out.print("\nTRY AGAIN? (YES/NO): ");
 			String useranswer = scanner.nextLine();
-			scanner.close();
 
 			if (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")) {
 				retry = true;
