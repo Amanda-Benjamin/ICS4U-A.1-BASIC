@@ -7,15 +7,14 @@
  * @since Oct 1 2024
  */
 
-
 /**
- * This is the BASIC DICE game
+ * This is the BASIC Dice game
  */
 
-	import java.util.Scanner;
-	import java.util.Random;
+import java.util.Random;
+import java.util.Scanner;
 
-final class DICE {
+final class Dice {
 	/**
 	 * Prevent instantiation.
 	 * Throw an exception IllegalStateException.
@@ -25,7 +24,7 @@ final class DICE {
 	 *
 	 *
 	 */
-	private DICE() {
+	private Dice() {
 		throw new IllegalStateException("Cannot be instantiated");
 	}
 
@@ -35,15 +34,13 @@ final class DICE {
 	* @param args No args will be used
 	*/
 
-
     public static void main(final String[] args) {
 
 		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
 		boolean retry = true;
 
-		while (retry == true) {
-
+		while (retry) {
 			System.out.println("\nTHIS PROGRAM SIMULATES THE ROLLING OF A");
 			System.out.println("PAIR OF DICE.");
 			System.out.println("YOU ENTER THE NUMBER OF TIMES YOU WANT THE COMPUTER");
@@ -69,6 +66,7 @@ final class DICE {
 
 			System.out.print("\nTRY AGAIN? (YES/NO): ");
 			String useranswer = scanner.nextLine();
+			scanner.close();
 
 			if (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")) {
 				retry = true;
