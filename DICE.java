@@ -38,22 +38,23 @@ final class DICE {
 
     public static void main(final String[] args) {
 
-Scanner scanner = new Scanner(System.in);
+		Scanner scanner = new Scanner(System.in);
 		Random random = new Random();
+		boolean retry = true;
 
-    	System.out.println("THIS PROGRAM SIMLUATES THE ROLLING OF A");
-        System.out.println("PAIR OF DICE.");
-        System.out.println("YOU ENTER THE NUMBER OF TIMES YOU WANT THE COMPUTER");
-        System.out.println("TO 'ROLL' THE DICE. WATCH OUT, VERY LARGE NUMBERS TAKE");
-        System.out.println("A LONG TIME, IN PARTICULAR, NUMBERS OVER 5000");
+		while (retry == true) {
 
-		String useranswer = "YES";
+			System.out.println("\nTHIS PROGRAM SIMULATES THE ROLLING OF A");
+			System.out.println("PAIR OF DICE.");
+			System.out.println("YOU ENTER THE NUMBER OF TIMES YOU WANT THE COMPUTER");
+			System.out.println("TO 'ROLL' THE DICE. WATCH OUT, VERY LARGE NUMBERS TAKE");
+			System.out.println("A LONG TIME, IN PARTICULAR, NUMBERS OVER 5000");
 
-		int[] frequency = new int[13];
+			System.out.print("HOW MANY ROLLS: ");
+			int rollamount = scanner.nextInt();
+			scanner.nextLine(); // Consume newline left-over
 
-		if (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")) {
-		System.out.print("HOW MANY ROLLS: ");
-		int rollamount = scanner.nextInt();
+			int[] frequency = new int[13];
 
 			for (int counter = 0; counter < rollamount; counter++) {
 				int firstdie = random.nextInt(6) + 1;
@@ -62,13 +63,18 @@ Scanner scanner = new Scanner(System.in);
 				frequency[total]++;
 			}
 
-			for (int amountcounter = 0; amountcounter <=12; amountcounter++) {
+			for (int amountcounter = 0; amountcounter <= 12; amountcounter++) {
 				System.out.println("TOTAL SPOTS " + amountcounter + "        NUMBER OF TIMES " + frequency[amountcounter]);
 			}
 
-			System.out.print("\nTRY AGAIN? ");
-			useranswer = scanner.nextLine();
-    	}
-		useranswer = scanner.nextLine();
+			System.out.print("\nTRY AGAIN? (YES/NO): ");
+			String useranswer = scanner.nextLine();
+
+			if (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")) {
+				retry = true;
+			} else {
+				retry = false;
+			}
+		}
 	}
 }
