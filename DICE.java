@@ -48,7 +48,7 @@ final class DICE {
 			System.out.println("PAIR OF DICE.");
 			System.out.println("YOU ENTER THE NUMBER OF TIMES YOU WANT THE COMPUTER");
 			System.out.println("TO 'ROLL' THE DICE. WATCH OUT, VERY LARGE NUMBERS TAKE");
-			System.out.println("A LONG TIME, IN PARTICULAR, NUMBERS OVER 5000");
+			System.out.println("A LONG TIME, IN PARTICULAR, NUMBERS OVER 5000\n");
 
 			System.out.print("HOW MANY ROLLS: ");
 			int rollamount = scanner.nextInt();
