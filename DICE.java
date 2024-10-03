@@ -51,7 +51,7 @@ Scanner scanner = new Scanner(System.in);
 
 		int[] frequency = new int[13];
 
-		if (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")); {
+		if (useranswer.equalsIgnoreCase("YES") || useranswer.equalsIgnoreCase("Y")) {
 		System.out.print("HOW MANY ROLLS: ");
 		int rollamount = scanner.nextInt();
 
