@@ -62,11 +62,11 @@ final class Dice {
                 int total = firstdie + seconddie;
                 frequency[total]++;
             }
-
-            for (int amountcounter = 0; amountcounter <= 12; amountcounter++) {
-                System.out.println("TOTAL SPOTS "
-                + amountcounter
-                + "        NUMBER OF TIMES "
+            
+            System.out.println("TOTAL SPOTS        NUMBER OF TIMES");
+            for (int amountcounter = 2; amountcounter <= 12; amountcounter++) {
+                System.out.println(amountcounter
+                + "                  "
                 + frequency[amountcounter]);
             }
 
